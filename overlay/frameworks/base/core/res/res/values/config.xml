@@ -412,4 +412,6 @@
    <!-- Whether the device needs axis inversion for the fingerprint notification panel gesture when rotated -->
    <bool name="config_needsFingerprintAxisInversion">true</bool>
 
+    <!-- Keep chosen default camera app pinned in memory for faster launching -->
+    <bool name="config_pinnerCameraApp">true</bool>
 </resources>
