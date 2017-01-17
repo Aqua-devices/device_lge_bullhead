@@ -247,6 +247,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/gps.conf:system/etc/gps.conf
 
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8992
+
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc-nci \
