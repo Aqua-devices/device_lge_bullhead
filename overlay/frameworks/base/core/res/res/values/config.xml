@@ -388,6 +388,10 @@
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
+    <!-- The threshold angle for any motion detection in auto-power save modes.
+         In hundreths of a degree. -->
+    <integer name="config_autoPowerModeThresholdAngle">45</integer>
+
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
