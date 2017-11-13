@@ -81,6 +81,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    BullheadLayout
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/synaptics_rmi4_i2c.idc:system/usr/idc/synaptics_rmi4_i2c.idc
