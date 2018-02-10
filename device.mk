@@ -507,6 +507,10 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl
 
+# AOSP symlinks
+PRODUCT_PACKAGES += \
+    AOSPLinks
+
 # limit dex2oat threads to improve thermals
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=4 \
@@ -588,3 +592,4 @@ $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
 # only include verity on user builds for AquariOS
 ifeq ($(TARGET_BUILD_VARIANT),user)
    PRODUCT_COPY_FILES += device/lge/bullhead/fstab-verity.bullhead:root/fstab.bullhead
+endif
