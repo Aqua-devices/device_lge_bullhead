@@ -26,3 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 $(call inherit-product, device/lge/bullhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/bullhead/device-vendor.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
