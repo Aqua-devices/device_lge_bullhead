@@ -24,8 +24,8 @@ PRODUCT_COPY_FILES := device/lge/bullhead/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from Pixel2ROM config
-$(call inherit-product, vendor/p2r-aosp/config/p2r-common.mk)
+# Inherit from Nexus PieX config
+$(call inherit-product, vendor/nexuspiex/config/npx-common.mk)
 
 PRODUCT_NAME := bullhead
 PRODUCT_DEVICE := bullhead
