@@ -1,1 +1,2 @@
 allow hal_camera_default kernel:system { module_request };
+allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;

@@ -16,3 +16,5 @@ allow init sysfs_devices_fingerprint:file { read open write getattr setattr };
 allow init sysfs_display:file { read open write getattr setattr open };
 allow init sysfs_wlan_fwpath:file { read open write getattr setattr open };
 allow init sysfs_power_management:file { read open write getattr setattr open };
+allow init sysfs_qpnp_25:file { read open write getattr setattr open };
+allow init sysfs_qpnp_25:lnk_file r_file_perms;
