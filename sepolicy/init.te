@@ -1,3 +1,18 @@
 allow init tmpfs:lnk_file create_file_perms;
 # allow: write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
 allow init sysfs_ssr:lnk_file read;
+allow init kernel:system { module_request };
+allow init sysfs_g_android_param:dir search;
+allow init sysfs_g_android_param:file rw_file_perms;
+allow init sysfs_backlight:dir search;
+allow init sysfs_backlight:file { open read write getattr setattr };
+allow init sysfs_lge_handle_panic_param:dir search;
+allow init sysfs_lge_handle_panic_param:file rw_file_perms;
+allow init sysfs_usb:file { open read write getattr setattr };
+#allow init sysfs_mmcblk0:file { read write getattr setattr open };
+allow init sysfs:dir { search open };
+allow init sysfs:file { read open write getattr setattr };
+allow init sysfs_devices_fingerprint:file { read open write getattr setattr };
+allow init sysfs_display:file { read open write getattr setattr open };
+allow init sysfs_wlan_fwpath:file { read open write getattr setattr open };
+allow init sysfs_power_management:file { read open write getattr setattr open };
