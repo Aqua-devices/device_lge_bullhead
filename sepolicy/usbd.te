@@ -1,1 +1,1 @@
-allow usbd usbd:capability { dac_override };
+#allow usbd usbd:capability { dac_override };
