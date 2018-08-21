@@ -184,6 +184,7 @@
 /sys/kernel/debug/kgsl/proc/*/mem u:object_r:debugfs_mem:s0
 /sys/devices/soc.0/leds-qpnp-25(/.*) u:object_r:sysfs_qpnp_25:s0
 /sys/devices/virtual/net(/.*)? u:object_r:sysfs_rmnet:s0
+/sys/class/rfkill/rfkill0(/.*)? u:object_r:sysfs_rfkill:s0
 
 # NFC hal
 /system/bin/hw/nfc_hal_pn54x       u:object_r:nfc_hal_pn54x_exec:s0

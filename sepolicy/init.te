@@ -18,3 +18,7 @@ allow init sysfs_wlan_fwpath:file { read open write getattr setattr open };
 allow init sysfs_power_management:file { read open write getattr setattr open };
 allow init sysfs_qpnp_25:file { read open write getattr setattr open };
 allow init sysfs_qpnp_25:lnk_file r_file_perms;
+
+# bluetooth permissions grant
+allow init sysfs_rfkill:dir { search read open };
+allow init sysfs_rfkill:file { read open write getattr setattr };
