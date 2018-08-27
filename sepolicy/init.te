@@ -20,5 +20,18 @@ allow init sysfs_qpnp_25:file { read open write getattr setattr open };
 allow init sysfs_qpnp_25:lnk_file r_file_perms;
 
 # bluetooth permissions grant
-allow init sysfs_rfkill:dir { search read open };
-allow init sysfs_rfkill:file { read open write getattr setattr };
+allow init sysfs_rfkill0:dir { search read open };
+allow init sysfs_rfkill0:file { read open write getattr setattr };
+allow init sysfs_rfkill0:lnk_file rw_file_perms;
+
+allow init sysfs:file { setattr getattr };
+
+allow init sysfs_subsys1:dir { search read open };
+allow init sysfs_subsys1:file { read open write getattr setattr };
+
+allow init sysfs_mmcblk0_queue:dir { search read open };
+allow init sysfs_mmcblk0_queue:file rw_file_perms;
+
+# kgsl
+allow init debugfs_kgsl_proc:dir { search read open relabelfrom };
+allow init debugfs_kgsl_proc:file { read write getattr setattr };

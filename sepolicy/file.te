@@ -119,4 +119,6 @@ type sysfs_rmnet, fs_type, sysfs_type;
 
 # type for init
 type sysfs_block, fs_type, sysfs_type;
-type sysfs_rfkill, fs_type, sysfs_type;
+type sysfs_rfkill0, fs_type, sysfs_type;
+type sysfs_subsys1, fs_type, sysfs_type;
+type sysfs_mmcblk0_queue, fs_type, sysfs_type;

@@ -7,3 +7,4 @@ allow hal_sensors_default init:unix_stream_socket { connectto read };
 allow hal_sensors_default persist_file:dir { search read write add_name };
 allow hal_sensors_default persist_file:file { read write getattr setattr open };
 allow hal_sensors_default persist_sensortool_file:file { read write getattr setattr open };
+allow hal_sensors_default contexthub_prop:property_service set;
