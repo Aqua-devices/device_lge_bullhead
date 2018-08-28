@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES := \
 
 PRODUCT_SHIPPING_API_LEVEL := 23
 
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/rootdir/init.bullhead.rc:root/init.bullhead.rc \
     device/lge/bullhead/rootdir/init.bullhead.usb.rc:root/init.bullhead.usb.rc \
