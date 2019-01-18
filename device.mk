@@ -674,8 +674,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=1
 
-# setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+# configure the HWUI memory limits
+$(call inherit-product, vendor/aquarios/prebuilt/dalvik/phone-xxhdpi-3072-hwui-memory.mk)
+
+# setup dalvik vm configs
+$(call inherit-product, vendor/aquarios/prebuilt/dalvik/phone-xxhdpi-3072-dalvik-heap.mk)
 
 # facelock properties
 PRODUCT_PROPERTY_OVERRIDES += \
