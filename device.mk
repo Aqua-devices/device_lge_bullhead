@@ -601,8 +601,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=23
 
-# setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+# configure the HWUI memory limits
+$(call inherit-product, vendor/aquarios/prebuilt/dalvik/phone-xxhdpi-3072-hwui-memory.mk)
+
+# setup dalvik vm configs
+$(call inherit-product, vendor/aquarios/prebuilt/dalvik/phone-xxhdpi-3072-dalvik-heap.mk)
 
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
