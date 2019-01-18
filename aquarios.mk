@@ -1,5 +1,5 @@
 #
-# Copyright 2015 The Android Open Source Project
+# Copyright 2018 AquariOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,8 +24,8 @@ PRODUCT_COPY_FILES := device/lge/bullhead/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from Pixel2ROM config
-$(call inherit-product, vendor/nexuspiex/config/npx-common.mk)
+# Change to Aquarios
+$(call inherit-product, vendor/aquarios/configs/aquarios_phone.mk)
 
 PRODUCT_NAME := bullhead
 PRODUCT_DEVICE := bullhead
@@ -41,9 +41,3 @@ $(call inherit-product, device/lge/bullhead-vendorimage/bullhead-vendorimage.mk)
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     WallpaperPicker
-
-# Device Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="bullhead-user 8.1.0 OPM6.171019.030.H1 4903069 release-keys"
-
-BUILD_FINGERPRINT := google/bullhead/bullhead:8.1.0/OPM6.171019.030.H1/4903069:user/release-keys
