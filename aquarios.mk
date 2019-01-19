@@ -24,6 +24,10 @@ PRODUCT_COPY_FILES := device/lge/bullhead/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Add some APNs
+PRODUCT_COPY_FILES := \
+    device/lge/bullhead/apns-full-conf.xml:system/etc/apns-conf.xml
+
 # Change to Aquarios
 $(call inherit-product, vendor/aquarios/configs/aquarios_phone.mk)
 
