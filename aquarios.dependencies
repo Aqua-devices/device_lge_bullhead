@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "aqua-devices/kernel_lge_bullhead",
+    "target_path": "kernel/lge/bullhead",
+    "branch": "a9"
+  },
+  {
+    "repository": "aqua-devices/vendor_lge_bullhead",
+    "target_path": "vendor/lge/bullhead",
+    "branch": "a9"
+  }
+]

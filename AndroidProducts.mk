@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/gzosp_bullhead.mk
+    $(LOCAL_DIR)/aquarios.mk
