@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_bullhead.mk \
+    $(LOCAL_DIR)/aquarios_bullhead.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosip_bullhead-userdebug \
-    aosip_bullhead-eng
+    aquarios_bullhead-userdebug \
+    aquarios_bullhead-eng
